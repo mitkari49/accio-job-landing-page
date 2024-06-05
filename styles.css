@@ -1,0 +1,352 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'ABeeZee', sans-serif;
+  }
+  
+  /* Navbar styles */
+  nav {
+    position: sticky !important;
+    top: 0;
+    z-index: 100 !important;
+  }
+  
+  .nav-list > li > a {
+    color: var(--Gray-2, #4f4f4f);
+    font-family: "Bai Jamjuree", "DM Sans", "Inter", "Poppins", "Roboto", "Sofia Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%;
+    letter-spacing: 0.16px;
+  }
+  
+  .sec-logo > img {
+    width: 77px;
+    height: 35px;
+  }
+  
+  header {
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.28px;
+    text-align: center;
+    background-color: #2f80ed;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .hero > div:nth-child(1) {
+    width: 50%;
+  }
+  
+  .hero > div:nth-child(1) > h1:nth-child(1),
+  .hero > div:nth-child(1) > h1:nth-child(2) {
+    color: #2b2f34;
+    font-family: ABeeZee, sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.75px;
+  }
+  
+  .hero > div:nth-child(1) > h1:nth-child(2) > span {
+    color: #2f80ed;
+  }
+  
+  .hero > div:nth-child(1) > p {
+    color: #595959;
+    font-family: ABeeZee, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  
+  /* Form styles */
+  .form-container {
+    width: 45%;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 28px 24px 32px 24px;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0px 25px 54px 0px rgba(0, 0, 0, 0.12);
+  }
+  
+  .form > h2 {
+    color: #2b2f34;
+    text-align: center;
+    font-family: ABeeZee, sans-serif;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.48px;
+  }
+  
+  .form > p {
+    color: #818d9d;
+    text-align: center;
+    font-family: ABeeZee, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: -30px;
+  }
+  
+  .input-data {
+    display: flex;
+    width: 100%;
+    padding: 14px 10px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #fafafa;
+  }
+  
+  .input-data > input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .input-data > input:focus {
+    outline: none;
+  }
+  
+  .form > button {
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(277deg, #992fed 0%, #2f80ed 100%);
+    color: #fff;
+    font-family: ABeeZee, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  
+  .form > button:hover {
+    transform: scale(1.1);
+  }
+  
+  .form > p:last-child {
+    margin-top: 3px;
+    color: #818d9d;
+    text-align: center;
+    font-family: ABeeZee, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  
+  .form > p:last-child > span {
+    color: #2f80ed;
+  }
+  
+  /* Image styles */
+  .hero img {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+  }
+  
+  /* Additional styles */
+  #courses {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+  
+  #courses .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  #courses .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  #courses .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  #courses .card-body {
+    padding: 1.5rem;
+  }
+  
+  #courses .card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  #courses .card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  #courses .details {
+    margin-top: 1rem;
+  }
+  
+  #courses .details p {
+    font-size: 0.875rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  #courses .details p svg {
+    margin-right: 0.5rem;
+  }
+  
+  #courses .details hr {
+    margin: 0.75rem 0;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  #courses .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  #courses .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .hiring-partners {
+    padding-top: 5rem;
+    text-align: center;
+  }
+  
+  .hiring-partners p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    background: linear-gradient(277deg, #992fed 0%, #2f80ed 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .hiring-partners h1 {
+    color: #2f80ed;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.54px;
+  }
+  
+  .hiring-partners .companies img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .students {
+    text-align: center;
+    padding: 5rem 0;
+  }
+  
+  .students h1 {
+    color: #2f80ed;
+    font-size: 36px;
+  }
+  
+  .students p {
+    font-size: 20px;
+    color: #4f4f4f;
+  }
+  
+  .student-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .student-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .student-card .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .student-card .profile img {
+    width: 50px; /* Adjust size as needed */
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .student-card .para {
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .student-card .date {
+    margin-top: 10px;
+    color: #999;
+  }
+  
+  #accreditation h2 {
+    color: #2f80ed;
+    margin-bottom: 1rem;
+  }
+  
+  #accreditation .col-md-6 h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #accreditation .col-md-6 p {
+    color: #666;
+  }
+  
